@@ -3,7 +3,9 @@
 A full-stack customer support and ticket management platform designed to help customers raise support requests and enable support agents to manage tickets, assignments, priorities, statuses, comments, and Service Level Agreements (SLAs) from a centralized workspace.
 
 **Live Demo:** https://supportdesk-frontend-t9qn.onrender.com/
+
 **Backend API:** https://supportdesk-backend-ik10.onrender.com/
+
 **GitHub:** https://github.com/ChanduN0143/supportdesk
 
 
