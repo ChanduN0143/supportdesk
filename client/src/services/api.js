@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
 
 const apiRequest = async (endpoint, options = {}) => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
@@ -40,7 +40,7 @@ export const registerUser = async (name, email, password) => {
 };
 
 export const getProfile = async (token) => {
-  return apiRequest("/profile", {
+  return apiRequest("/auth/profile", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`
